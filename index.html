@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Chain Ventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            background: radial-gradient(circle at top, #0f0f1a, #050510 70%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Crypto Coin Floating Animation */
+        .coin {
+            position: absolute;
+            width: 55px;
+            opacity: 0.75;
+            animation: floatUp 12s linear infinite;
+        }
+
+        @keyframes floatUp {
+            from { transform: translateY(100vh) rotate(0deg); }
+            to   { transform: translateY(-120vh) rotate(360deg); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 3;
+            background: rgba(20,20,30,0.75);
+            padding: 50px 40px;
+            border-radius: 15px;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0,140,255,0.25);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #6bb7ff;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #cfd9ff;
+        }
+
+        a.download-btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #4e9eff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(78,158,255,0.5);
+        }
+
+        a.download-btn:hover {
+            background: #71b6ff;
+            box-shadow: 0 0 25px rgba(78,158,255,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Crypto Coins -->
+    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" class="coin" style="left: 30%; animation-delay: 0s; width: 50px;">
+    <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" class="coin" style="left: 30%; animation-delay: 4s; width: 55px;">
+    <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" class="coin" style="left: 55%; animation-delay: 2s; width: 50px;">
+    <img src="https://cryptologos.cc/logos/solana-sol-logo.png" class="coin" style="left: 75%; animation-delay: 6s; width: 48px;">
+    <img src="https://cryptologos.cc/logos/xrp-xrp-logo.png" class="coin" style="left: 90%; animation-delay: 1s; width: 50px;">
+
+    <div class="container">
+        <h1>Welcome to Nova Chain Ventures</h1>
+        <p>A gateway to blockchain innovation, secure tools, and modern investment utilities.</p>
+
+        <!-- Button text updated -->
+        <a href="NovaChainCallConnect" class="download-btn" download>Download Video Call</a>
+    </div>
+
+</body>
+</html>
